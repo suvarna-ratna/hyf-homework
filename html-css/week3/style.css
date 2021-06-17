@@ -1,0 +1,236 @@
+*{
+    box-sizing: border-box;
+
+}
+
+.form{
+    width: 80%;
+    padding: 2%;
+    margin: 4%;
+    position: relative;
+    border: 8px solid grey;
+    background-color: rgb(241, 229, 241);
+}
+body{
+    display: flex;
+    justify-content: center;
+    font-family: Georgia,sans-serif;
+    background-image: url();
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    
+}
+nav ul{
+    list-style-type: none;
+    padding-right: 20px;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: chocolate;
+}
+ 
+
+.steps{
+    display: inline-block;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+.logo{
+    width: 70px;
+    height: 70px;   
+}
+
+.logo img{
+    width: 100%;
+}
+
+.sign-up-info{
+    width: 70%;
+}
+
+.customer-info label{
+    width: 20%;
+    text-align: right;
+    margin-top: 3%;
+}
+
+.customer-info{
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+
+.progress-bar{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: solid #ccc 1px;
+    border-radius: 30px;
+    margin-bottom: 5%;
+    background-color: white;  
+}
+
+.progress-bar > span{
+    display: block;
+    height: 100%;
+    border-radius: 30px;
+    background-color: rgb(57, 161, 189);  
+}
+
+.bar-1 > span{
+    animation: bar1 4s ;
+}
+
+.bar-2 > span{
+    animation: bar2 4s ;
+}
+
+.bar-3 > span{
+    animation: bar3 4s ;
+}
+.bar-4 > span{
+    animation: bar4 4s ;
+}
+
+
+
+@keyframes bar1{
+  0% {width: 0;}
+  100% {width: 25%;}
+}
+
+@keyframes bar2{
+    0% {width: 25%;}
+    100% {width: 50%;}
+}
+
+@keyframes bar3{
+    0% {width: 50%;}
+    100% {width: 75%;}
+}
+@keyframes bar4{
+    0% {width: 75%;}
+    100% {width: 90%;}
+}
+
+.Profile-description{
+    
+        margin-top:20px;
+        display: flex;
+        flex-direction: row;    
+    }
+    .Profile-description p{
+        font-size:12px;
+        font-style: italic;
+}
+
+.newsletter, .offers{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.shipping-box{
+    display: none;
+}
+
+input[type=checkbox]:checked ~ .shipping-box{
+    display: inline;
+}
+
+.shipping-lable{
+    width: 90%;
+}
+ .submit-button{
+    background-color: #93483c;
+    padding: 12px 20px;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-top: 15%;
+
+}
+
+.submit-button:hover{
+    background-color: #bd2807;
+}
+
+label{
+    padding: 12px 12px 12px 0px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: medium;
+}
+
+p{
+    font-size: larger;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 110px 110px 110px 120px;
+    row-gap: 20%;
+    justify-content:space-evenly;
+    padding-top: 30px;   
+}
+.grid-container img{
+    width: 75%;
+    max-height: 100px;   
+}
+
+input, select, textarea {
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 6px; 
+}
+
+@media screen and (max-width: 768px){
+    .form{
+        width: 88%;
+        font-size: small;
+    }
+    
+    h1{
+        font-size:x-large;
+    }
+
+    input[type=text], select, textarea {
+        width: 100%;   
+    } 
+
+    .Profile-description{
+        flex-direction: column;
+    }
+
+    .Profile-description > label{
+        width: 100%; 
+    }
+
+    .customer-info label{
+        width: 100%;
+        text-align: left;
+    }
+
+    .customer-info input{
+        width: 100%;
+    }
+
+    .grid-container{
+        grid-template-columns: 120px 120px;
+        row-gap: 2%;
+    }
+
+    .newsletter, .offers{
+        flex-direction: column;
+    }
+
+}

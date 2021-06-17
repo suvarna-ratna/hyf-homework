@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form">
+        <form action="" method="">
+            <header>
+                <div class="logo">
+                    <img src="suvarna.jpeg" alt="logo of company">
+                </div>
+                <nav>
+                    <ul>
+                        <li class="steps"><a href="index1.html">HOME </a></li>
+                        <li class="steps"><a href="index2.html">CONTACT </a></li>
+                        <li class="steps"><a href="index3.html">SELECTION</a></li>
+                        <li class="steps"><a href="index4.html">PAYMENT<a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="sign-up-info">
+                <h1>Sign up to yourcustomtailor.com</h1>
+            </div>
+            <div>
+                <h2>Step 4/4 - Payment </h2>
+                <label for="progress-bar">Progress</label>
+                <div class="progress-bar bar-4">
+                    <span style="width: 90%;"></span>
+                </div>
+
+                <div>
+                    <h1>Please fill in your payment data</h1>
+                </div>
+                <div class="customer-info">
+                    <div>
+                        <label for="cardname">Name on Card</label>
+                        <input type="text" id="cardname" name="cardname" placeholder="hack yourfuture" required>
+                    </div>
+                    <div>
+                        <label for="Cards-list">Type of card</label>
+                        <select name="Cards-list" id="cards-list" required>
+                            <option value="" label="Select type of card" selected="selected">Select a country …</option>
+                            <option value="visa">VISA</option>
+                            <option value="electron">ELECTRON</option>
+                            <option value="american express">AMERICAN EXPRESS</option>
+                            <option value="mastercard">MASTERCARD</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="cardnum">Credit card number</label>
+                        <input type="text" id="cardnum" name="cardnumber" placeholder="1234-1234-1234-1234"
+                            pattern="[0-9]" minlength="16" maxlength="16" required>
+                        <label for="First-name">First name</label>
+                        <input type="text" id="First-name" name="First-name" required>
+                    </div>
+                    <div>
+                        <label for="expmonth">Exp Month</label>
+                        <input type="text" id="expmonth" name="expmonth" placeholder="month" pattern="[0-9]"
+                            minlength="2" maxlength="2" required>
+                        <label for="expyear">Exp Year</label>
+                        <input type="text" id="expyear" name="expyear" placeholder="year" pattern="[0-9]" minlength="2"
+                            maxlength="2" required>
+                    </div>
+                    <div>
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="***" pattern="[0-9]" minlength="3"
+                            maxlength="3" required>
+                    </div>
+                </div>
+                <div>
+                    <button class="submit-button">BuyNow</button>
+                </div>
+
+</body>
+
+</html>
