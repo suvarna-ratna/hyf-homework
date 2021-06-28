@@ -1,9 +1,9 @@
-const favPizza = "Dominos";
-const pizzaPrice = 80;
+const favPizza = "Dominos"
+const pizzaPrice = 80
 
-let amountOfPizza = 2;
-let familySize = false;
-let totalPrice = pizzaPrice * amountOfPizza;
+let amountOfPizza = 2
+let familySize = false
+let totalPrice = pizzaPrice * amountOfPizza
 
 if (familySize) {
     totalPrice *= 2;
