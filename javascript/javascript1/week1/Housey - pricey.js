@@ -21,9 +21,9 @@ const costPayingByPeter = 2500000;
  //Julia house price
 let volumeInMeters2 = widthOfHouse[1]*heightOfHouse[1]*depthOfHouse[1];
 const costPayingByJulia = 1000000;
-
- let priceOfJuliaHouse = volumeInMeters2 * 2.5 * 1000 + gardenSizeInM2[1] * 300;
- if (priceOfJuliaHouse < costPayingByJulia){
+let priceOfJuliaHouse = volumeInMeters2 * 2.5 * 1000 + gardenSizeInM2[1] * 300;
+ 
+if (priceOfJuliaHouse < costPayingByJulia){
     console.log('Julia is paying too much for house -BAD');
  }
  else if (priceOfJuliaHouse > costPayingByJulia){
