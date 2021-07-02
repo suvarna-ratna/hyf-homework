@@ -1,7 +1,11 @@
 let dogYearOfBirth = 2017;
 let dogYearFuture = 2027;
 let dogYear = dogYearFuture - dogYearOfBirth;
+<<<<<<< HEAD
+console.log(dogYear);
+=======
 //console.log(dogYear);
+>>>>>>> master
 let shouldShowResultInDogYears = true
 
 if(shouldShowResultInDogYears)
