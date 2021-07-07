@@ -1,20 +1,25 @@
 //fullname
-function getFullname(firstname,surname){
+function getFullName(firstname,surname){
     return firstname+' '+surname;
 }
-const fullname = getFullname('Elon','Musk');
-console.log(fullname);
+const fullName = getFullName('Elon','Musk');
+console.log(fullName);
 
 // formalname 
-function getFullname(firstname,surname,useFormalName){    
+function getFullName(firstname,surname,useFormalName,gender){    
     if (useFormalName == true){
-        useFormalName = 'Lord';    
-    } else { 
-        useFormalName = '';
+        if(gender == 'male'){
+            return `Lord ${firstname} ${surname}`
+        }
+           
+    } else if (gender == 'female'){
+        return `Lordess ${firstname} ${surname}`
     }
- return useFormalName+' '+firstname+' '+surname;
+        else
+        return `${firstname} ${surname}`
+ 
 }
-const fullname1= getFullname('Frederick','King', true);
-const fullname2= getFullname('Margrethe', 'Queen',false);
-console.log(fullname1);
-console.log(fullname2);
+const fullName1= getFullName('Frederick','King', true,'male');
+const fullName2= getFullName('Margrethe', 'Queen',true,'female');
+console.log(fullName1);
+console.log(fullName2);
