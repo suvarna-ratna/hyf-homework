@@ -10,7 +10,7 @@ function getFullname(firstname,surname,useFormalName){
     if (useFormalName == true){
         useFormalName = 'Lord';    
     } else { 
-        useFormalName = 'Lordess';
+        useFormalName = '';
     }
  return useFormalName+' '+firstname+' '+surname;
 }
