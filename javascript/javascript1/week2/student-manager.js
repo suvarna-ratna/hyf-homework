@@ -1,15 +1,15 @@
 const class07Students = [];
 function addStudentToClass(studentName) {  
-if(studentName === "") {
+if(studentName.trim() === "") {
     console.log(' cannot add an empty string to the class');
-}else if (class07Students.includes(studentName)){
+}else if (class07Students.includes(studentName.trim())){
     console.log(`Student ${studentName} is already in the class.`)
 }else if (class07Students.length<6){
-  class07Students.push(studentName);
+  class07Students.push(studentName.trim());
 }
 else if(class07Students.length>=6){
-    if(studentName === "Queen Margrethe II" || class07Students.includes('Queen Margrethe II')){
-        class07Students.push(studentName); 
+    if(studentName.trim() === "Queen Margrethe II" || class07Students.includes('Queen Margrethe II')){
+        class07Students.push(studentName.trim()); 
       }
          else{
       console.log('Cannot add more students to class 07')
