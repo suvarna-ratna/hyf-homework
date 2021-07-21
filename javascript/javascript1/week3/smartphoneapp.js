@@ -1,6 +1,6 @@
 const activities = []
 function addActivity(activity, duration){
-    var today = new Date();
+    const today = new Date();
 today = today.toLocaleDateString("en-US");
 activities.push({
         date: today,
@@ -10,7 +10,7 @@ activities.push({
 }
 addActivity("Youtube", 30);
 function showStatus(activities){
-    if(activities.length==0){
+    if(activities.length===0){
         return "Add some activities before calling showStatus"
     }
     let totalDuration = 0
@@ -31,7 +31,7 @@ addActivity("News", 10)
 console.log(activities)
 showStatus(activities);
 function showStatusOnDate(activities,date){
-    if(activities.length==0){
+    if(activities.length===0){
         return "Add some activities before calling showStatus"
     }
     let totalDuration = 0
@@ -45,7 +45,7 @@ function showStatusOnDate(activities,date){
     }
     const limit = 120
     if(totalDuration>=limit){alert('You have reached your limit, no more smartphoning for you!')}
-return `You have ${count} activities for this day ${date}. You have ${totalDuration}  min. of usage`
+console.log (`You have ${count} activities for this day ${date}. You have ${totalDuration}  min. of usage`)
 }
 showStatusOnDate(activities,"7/17/2021")
 

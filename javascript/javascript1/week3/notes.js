@@ -1,9 +1,9 @@
 const notes = [];
 
-function saveNote(content1, id1) {
+function saveNote(content, id) {
   notes.push({
-      content: content1,
-      id: id1
+      content: content,
+      id: id
   })
 }
 
@@ -21,7 +21,7 @@ function getNote(id) {
             return notes[i];
         }
         else {
-            return 'please provide proper id'
+            return 'please provide proper id number'
         }
     }
   }

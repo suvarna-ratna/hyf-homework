@@ -28,9 +28,9 @@ const seriesDurations = [
   function logOutSeriesText() {
     const life = 80*365*24*60
     let seriesSpan = 0
-    seriesDurations.forEach(a=>{
-        const seriesTime = (((a.days*24*60)+(a.hours*60)+a.minutes)/life)*100
-        console.log(`${a.title} took ${seriesTime.toFixed(4)}% of my life`)
+    seriesDurations.forEach(series=>{
+        const seriesTime = (((series.days*24*60)+(series.hours*60)+series.minutes)/life)*100
+        console.log(`${series.title} took ${seriesTime.toFixed(4)}% of my life`)
         seriesSpan += seriesTime
     })
     console.log(`In total that is ${seriesSpan.toFixed(4)}% of my life`)
