@@ -4,8 +4,14 @@ function getReply(command) {
   const arrayOfStrings = command.split(" ");
   
   if (command.startsWith("Hello my name is")) {
-    voiceAssistantName = arrayOfStrings[4];
-    return `Nice to meet you ${voiceAssistantName}.` ;
+    if(voiceAssistantName ===''){
+      voiceAssistantName = arrayOfStrings[4];
+      return `Nice to meet you ${voiceAssistantName}.` ;
+    }
+    else {
+      return `Hej again ${voiceAssistantName}`
+    }
+    
   }
   if (command ==="What is my name?") {
     return `Your name is ${voiceAssistantName}.`;
@@ -58,6 +64,7 @@ function getReply(command) {
   }
 }
 console.log(getReply("Hello my name is Benjamin")); // "Nice to meet you benjamin"
+console.log(getReply("Hello my name is Benjamin")); // 'Hej again, benjamin'
 console.log(getReply("What is my name?")); // "Your name is Benjamin"
 console.log(getReply("Add fishing to my todo")); // "fishing added to your todo"
 console.log(getReply("Add singing in the shower to my todo")); // "singing in the shower"
