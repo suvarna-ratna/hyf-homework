@@ -61,12 +61,5 @@ function startGame() {
 }
 
 newgame.addEventListener("click", () => {
-  newgame.style.backgroundColor = "red";
-  winner.innerHTML = "";
-  gameStatus.innerHTML = "";
-  scount.innerHTML = "";
-  lcount.innerHTML = "";
-  startgame.disabled = false;
-  sCanvas.remove();
-  lCanvas.remove();
+  window.location.reload();
 });
