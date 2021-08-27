@@ -8,6 +8,8 @@ const gameStatus = document.getElementById("gameOver");
 const userValue = document.getElementById("quantity");
 let sPressed;
 let lPressed;
+const sCanvas = document.getElementById("s-canvas");
+const lCanvas = document.getElementById("l-canvas");
 
 const winnerFun = () => {
   if (sPressed === lPressed) {
@@ -65,4 +67,6 @@ newgame.addEventListener("click", () => {
   scount.innerHTML = "";
   lcount.innerHTML = "";
   startgame.disabled = false;
+  sCanvas.remove();
+  lCanvas.remove();
 });
