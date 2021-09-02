@@ -1,0 +1,63 @@
+[
+  {
+    "name": " First Generation Computers",
+    "year": "1942 to 1954",
+    "Maincomponent": "vacuum tubes",
+    "characteristics": {
+      "size": "Big Size",
+      "speed": "Hundred instructions per second"
+    },
+
+    "language": ["Machine", "Assembly Language."],
+    "example": ["ENIAC", "UNIVAC", "Mark –I", "mark-III ", "IBM 700 series"]
+  },
+  {
+    "name": " Second Generation Computers",
+    "year": "1955 to 1964",
+    "Maincomponent": "Transistor",
+    "characteristics": {
+      "size": "Smaller than first generation Computers",
+      "speed": "Thousand instructions per second"
+    },
+
+    "language": ["Assembly Language", "FORTRAN", "COBOL", "BASIC"],
+    "example": [
+      "IBM-7000",
+      "CDC 3000 series",
+      "PDP1",
+      "PDP3",
+      "PDP5",
+      "PDP8 ",
+      "ATLAS",
+      "IBM-7094  "
+    ]
+  },
+  {
+    "name": " Third Generation Computers",
+    "year": "1965 to 1974",
+    "Maincomponent": "Integrated Circuit",
+    "characteristics": {
+      "size": " Disk size mini computers",
+      "speed": "Million instructions per second"
+    },
+
+    "language": ["PASCAL", "COBOL", "BASIC", "C"],
+    "example": [
+      "IBM-307 Series",
+      "CDC 7600 series",
+      "PDP (Personal Data processer ) II"
+    ]
+  },
+  {
+    "name": " Fourth Generation Computers",
+    "year": "1975 to till now",
+    "Maincomponent": "VLSI Microprocessor",
+    "characteristics": {
+      "size": " Typewritter size micro Computer",
+      "speed": " Tens of Millions instructions per second"
+    },
+
+    "language": ["C++", "KL1", "RPG", "SQL"],
+    "example": ["CRAY 2", "IBM 3090/600 Series", "IBM AS/400/B60 etc."]
+  }
+]
