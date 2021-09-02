@@ -44,7 +44,9 @@ userInput.addEventListener("keyup", () => {
     .value.toLowerCase();
   return searchedProduct
     ? renderProducts(
-        products.filter((a) => a.name.toLowerCase().includes(searchedProduct))
+        products.filter((product) =>
+          product.name.toLowerCase().includes(searchedProduct)
+        )
       )
     : renderProducts(products);
 });
@@ -63,22 +65,34 @@ userCountry.addEventListener("change", () => {
       renderProducts(products);
       break;
     case "denmark":
-      renderProducts(products.filter((a) => a.shipsTo.includes("Denmark")));
+      renderProducts(
+        products.filter((item) => item.shipsTo.includes("Denmark"))
+      );
       break;
     case "sweden":
-      renderProducts(products.filter((a) => a.shipsTo.includes("Sweden")));
+      renderProducts(
+        products.filter((item) => item.shipsTo.includes("Sweden"))
+      );
       break;
     case "norway":
-      renderProducts(products.filter((a) => a.shipsTo.includes("Norway")));
+      renderProducts(
+        products.filter((item) => item.shipsTo.includes("Norway"))
+      );
       break;
     case "germany":
-      renderProducts(products.filter((a) => a.shipsTo.includes("Germany")));
+      renderProducts(
+        products.filter((item) => item.shipsTo.includes("Germany"))
+      );
       break;
     case "iceland":
-      renderProducts(products.filter((a) => a.shipsTo.includes("Iceland")));
+      renderProducts(
+        products.filter((item) => item.shipsTo.includes("Iceland"))
+      );
       break;
     case "england":
-      renderProducts(products.filter((a) => a.shipsTo.includes("England")));
+      renderProducts(
+        products.filter((item) => item.shipsTo.includes("England"))
+      );
       break;
   }
 });
