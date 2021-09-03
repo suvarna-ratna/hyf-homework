@@ -10,9 +10,9 @@ function function_three() {
   console.log("this is third element in array");
 }
 const funArray = [function_one(), function_two(), function_three()];
-for (let i = 0; i < funArray.length; i++) {
-  funArray[i];
-}
+funArray.forEach((element) => {
+  funArray[element];
+});
 //Anonymous function expression
 
 const funVar = function () {

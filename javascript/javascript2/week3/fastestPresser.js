@@ -14,21 +14,21 @@ const lCanvas = document.getElementById("l-canvas");
 const winnerFun = () => {
   if (sPressed === lPressed) {
     winner.innerHTML = "Game is draw";
-    var confettiSettingsS = { target: sCanvas };
-    var confettis = new ConfettiGenerator(confettiSettingsS);
+    const confettiSettingsS = { target: sCanvas };
+    const confettis = new ConfettiGenerator(confettiSettingsS);
     confettis.render();
-    var confettiSettingsL = { target: lCanvas };
-    var confettil = new ConfettiGenerator(confettiSettingsL);
+    const confettiSettingsL = { target: lCanvas };
+    const confettil = new ConfettiGenerator(confettiSettingsL);
     confettil.render();
   } else if (sPressed > lPressed) {
     winner.innerHTML = "S is the winner !!!🎉";
-    var confettiSettingsS = { target: sCanvas };
-    var confettis = new ConfettiGenerator(confettiSettingsS);
+    const confettiSettingsS = { target: sCanvas };
+    const confettis = new ConfettiGenerator(confettiSettingsS);
     confettis.render();
   } else {
     winner.innerHTML = "L is the winner !!!🎉";
-    var confettiSettingsL = { target: lCanvas };
-    var confettil = new ConfettiGenerator(confettiSettingsL);
+    const confettiSettingsL = { target: lCanvas };
+    const confettil = new ConfettiGenerator(confettiSettingsL);
     confettil.render();
   }
 };
