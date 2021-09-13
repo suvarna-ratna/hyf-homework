@@ -19,17 +19,10 @@ function getGiphy() {
 function searchGiphy() {
   gifImages.innerHTML = "";
   const searchValue = search.value;
-  giphyUrl = `https://api.giphy.com/v1/gifs/search?api_key=SEbeBvT6vQX0Pjf9ukTwaWbgwcVpuY2X=${searchValue}&limit=25`;
-  getGiphy();
-}
-
-function numberOfGiphys() {
-  gifImages.innerHTML = "";
-  const searchValue = search.value;
   let numberOfGifs = limit.value;
-  giphyUrl = `https://api.giphy.com/v1/gifs/search?api_key=SEbeBvT6vQX0Pjf9ukTwaWbgwcVpuY2X=${searchValue}&limit=${numberOfGifs}`;
+  let limitValue = numberOfGifs ? numberOfGifs : 25;
+  giphyUrl = `https://api.giphy.com/v1/gifs/search?api_key=FjWGFG1EVjkbGBDd7Ihm93smQxGFYaZE&q=${searchValue}&limit=${limitValue}&offset=0&rating=g&lang=en`;
   getGiphy();
 }
 
 searchButton.addEventListener("click", searchGiphy);
-number.addEventListener("input", numberOfGiphys);

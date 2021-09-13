@@ -2,6 +2,32 @@ const input = document.getElementById("city_name");
 const button = document.getElementById("btn");
 const msg = document.getElementById("errorMsg");
 
+const locationCity = document.getElementById("location");
+const weatherIcon = document.getElementById("weather_icon");
+const temp = document.getElementById("temperature");
+const description = document.getElementById("desc");
+const wind = document.getElementById("wind_speed");
+const high = document.getElementById("max_temp");
+const Low = document.getElementById("min_temp");
+const humidity = document.getElementById("humidity");
+const clouds = document.getElementById("clouds");
+const sunrise = document.getElementById("sunrise");
+const sunset = document.getElementById("sunset");
+
+function clearValues() {
+  locationCity.innerHTML = "";
+  weatherIcon.innerHTML = "";
+  temp.innerHTML = "";
+  description.innerHTML = "";
+  wind.innerHTML = "";
+  high.innerHTML = "";
+  Low.innerHTML = "";
+  humidity.innerHTML = "";
+  clouds.innerHTML = "";
+  sunrise.innerHTML = "";
+  sunset.innerHTML = "";
+  document.getElementById("map").innerHTML = "";
+}
 button.addEventListener("click", () => {
   if (input.value) {
     const cityName = input.value.toLowerCase();
@@ -20,43 +46,36 @@ button.addEventListener("click", () => {
 });
 
 function renderCityWeatherInfo(data) {
+  clearValues();
   msg.innerHTML = " ";
   input.value = "";
-  const location = document.getElementById("location");
-  location.innerHTML = data.name;
 
-  const weatherIcon = document.getElementById("weather_icon");
+  locationCity.innerHTML = data.name
+    ? data.name
+    : "Please provide existed city.. Entered City not Exist";
+
   weatherIcon.src =
     "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
 
-  const temp = document.getElementById("temperature");
   temp.innerHTML = Math.floor(data.main.temp - 273) + "&#176" + "C";
 
-  const description = document.getElementById("desc");
   description.innerHTML = data.weather[0].description;
 
-  const wind = document.getElementById("wind_speed");
   wind.innerHTML = "Wind speed: " + data.wind.speed + " m/s";
 
-  const high = document.getElementById("max_temp");
   high.innerHTML =
     "High: " + Math.floor(data.main.temp_max - 273) + "&#176" + "C";
 
-  const Low = document.getElementById("min_temp");
   Low.innerHTML =
     "Low: " + Math.floor(data.main.temp_min - 273) + "&#176" + "C";
 
-  const humidity = document.getElementById("humidity");
   humidity.innerHTML = "Humidity: " + data.main.humidity + "%";
 
-  const clouds = document.getElementById("clouds");
   clouds.innerHTML = "Clouds: " + data.clouds.all + "%";
 
-  const sunrise = document.getElementById("sunrise");
   sunrise.innerHTML =
     "Sunrise:" + new Date(data.sys.sunrise * 1000).toLocaleTimeString();
 
-  const sunset = document.getElementById("sunset");
   sunset.innerHTML =
     "Sunset:" + new Date(data.sys.sunset * 1000).toLocaleTimeString();
 
