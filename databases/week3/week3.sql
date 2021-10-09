@@ -502,10 +502,10 @@ SELECT
   meal.location,
   meal.when,
   meal.max_reservations AS no_of_reservations,
-  SUM(reservation.number_of_guests) AS no_of_reservations booked,
+  SUM(reservation.number_of_guests) AS no_of_reservations_booked,
   (
     meal.max_reservations - SUM(reservation.number_of_guests)
-  ) AS no_of_reservation remain
+  ) AS no_of_reservations_remain
 FROM
   meal
   JOIN reservation ON reservation.meal_id = meal.id
