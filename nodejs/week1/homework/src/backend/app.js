@@ -35,7 +35,7 @@ app.get("/large-meals", async (request, response) => {
 //route for random meals
 app.get("/meal", async (request, response) => {
   response.send(
-    mealsWithReviews[Math.floor(Math.random() * reservations.length)]
+    mealsWithReviews(meals)[Math.floor(Math.random() * reservations.length)]
   );
 });
 //route for all reservations
