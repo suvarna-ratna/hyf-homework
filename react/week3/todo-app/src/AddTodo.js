@@ -49,7 +49,7 @@ const AddTodo = function () {
           let value = event.target.value;
           changeTextValue(value);
         }}
-      />
+      /> <br/>
 
       <label htmlFor="deaadline">Deadline</label>
       <input
@@ -60,7 +60,7 @@ const AddTodo = function () {
           let value = event.target.value;
           changeDateValue(value);
         }}
-      />
+      /> <br/>
       <button onClick={addItem}>Add Todo</button>
       <ul>
         {list.length !== 0 ? (
