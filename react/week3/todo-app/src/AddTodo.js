@@ -19,8 +19,8 @@ const AddTodo = function () {
 
   function addItem() {
     setList(list.concat(newTodo));
-    changeTextValue("");
-    changeDateValue("");
+    changeTextValue(" ");
+    changeDateValue(" ");
   }
   function deleteItem(id) {
     const newList = list.filter((a) => a.id !== id);

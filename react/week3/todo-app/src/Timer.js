@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 const Timer = () => {
 const [timeValue, setTimeValue] = useState(0);
 
-setInterval(() => {
+setTimeout(() => {
     setTimeValue(timeValue+1)
 }, 1000);
 

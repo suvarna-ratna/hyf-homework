@@ -1,22 +1,20 @@
-import React from 'react';
-import Timer from './Timer';
-import Heading from './Heading';
-import AddTodo from './AddTodo';
-import GetTodo from './GetTodo';
+import React from "react";
+import Timer from "./Timer";
+import Heading from "./Heading";
+import AddTodo from "./AddTodo";
+
 
 const App = function () {
+  return (
+    <div>
+      <Heading/>
+      <Timer />
+      <AddTodo />
+      
 
-
-
-
-    return (
-        <div>
-            <Heading />
-            <Timer />
-            <AddTodo />
-            <GetTodo/>
-        </div>
-    );
-}
+      
+    </div>
+  );
+};
 
 export default App;
