@@ -1,6 +1,6 @@
 1.potato
 2.beans
-3.carrot
+3.cabbage
 4.cucumber
 5.eggplant
 6.tomato
