@@ -1,5 +1,5 @@
 1.potato
 2.beans
-3.raddish
+3.cabbage
 4.cucumber
 5.eggplant
