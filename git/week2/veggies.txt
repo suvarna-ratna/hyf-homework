@@ -1,5 +1,7 @@
 1.carrot
 2.califlower
-3.capsicum
+3.potato
 4.cabbage
 5.cucumber
+6.tomato
+7.eggplant
