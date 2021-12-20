@@ -3,3 +3,5 @@
 3.cabbage
 4.cucumber
 5.eggplant
+6.tomato
+7.raddish
