@@ -1,0 +1,7 @@
+1.potato
+2.beans
+3.cabbage
+4.cucumber
+5.eggplant
+6.tomato
+7.raddish
