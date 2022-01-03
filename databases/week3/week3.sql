@@ -49,7 +49,7 @@ INSERT INTO
 values(
     1,
     'Frikadeller ',
-    'This savory pork meatball is a favorite in Denmark. It is often served with brown sauce, potatoes, and cabbage.',
+    ' It is often served with brown sauce, potatoes, and cabbage.',
     'Marv & Ben-Snaregade 4, 1205 København',
     '2021-10-03 18:00:00',
     '10',
